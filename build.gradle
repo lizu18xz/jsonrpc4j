@@ -35,6 +35,7 @@ compileTestJava {
 
 repositories {
     mavenCentral()
+    maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
 }
 
 dependencies {
@@ -105,7 +106,6 @@ jacocoTestReport {
         html.destination "${buildDir}/jacocoHtml"
     }
 }
-
 
 publishing {
     publications {
